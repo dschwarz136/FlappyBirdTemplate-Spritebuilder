@@ -13,7 +13,9 @@
 {
     // put update code here
     character = (Character*)[CCBReader load:@"Character"];
-    [physicsNode addChild:character];}
+    [physicsNode addChild:character];
+    [self addObstacle];
+}
 
 // put new methods here
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
